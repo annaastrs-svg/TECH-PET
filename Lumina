@@ -1,0 +1,27 @@
+"Sintonizador de Calma".
+
+La función completa es esta: Lumina será un compañero que vive en una terminal compacta. 
+Para "activarlo" y que te ayude, debes cerrar el circuito tocando los dos sensores metálicos con tus dedos. 
+Al hacerlo, Lumina "siente" tu presencia, inicia un latido háptico con el motor y te guía en una sesión de regulación emocional.
+
+
+
+"El Abrazo Digital"
+Estado de Reposo: Lumina está "dormida" (ojos cerrados) en la OLED para ahorrar energía.
+
+Detección de Contacto: Al tocar las dos placas (T1 y T2), el sensor envía una señal. Lumina "despierta" y sus ojos se abren.
+
+Sincronía Háptica: El motor del teléfono empieza a vibrar con un ritmo de latido humano relajado (60 BPM). Esto ayuda a que el usuario baje su propio ritmo cardíaco por simpatía.
+
+Sesión de Soporte: Si mantienes el contacto por más de 5 segundos, la pantalla inicia un mensaje de aliento aleatorio y una guía de respiración visual
+
+
+Componente,Pin ESP32,Instrucciones
+OLED (SCK),GPIO 22,Reloj de la pantalla.
+OLED (SDA),GPIO 21,Datos de la pantalla.
+Motor (Vibración),GPIO 13,El cable positivo del motor va aquí.
+Sensor (Pin TX o T1),GPIO 34,Conecta el cable que envía la señal del sensor aquí.
+Botón (HP),GPIO 4,Para cambiar manualmente de mensaje.
+
+
+El Chasis: Pega las dos placas metálicas del sensor a los costados de tu base de motherboard o carcasa de HP. Debes poder tocarlas cómodamente con el pulgar y el índice de ambas manos al sostener el dispositivo.
